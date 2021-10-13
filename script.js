@@ -33,7 +33,16 @@ const currencies = [
   'KRW',
   'MYR'
 ]
-const root = document.getElementById("root");
-const container = document.createElement("div");
-root.appendChild(container);
+root.innerHTML = `
+<p> Enter amount in US Dollars: $<input id='usd' type='text'></p> 
+<p>Select currency to convert to: <select name='currency-converters' id='currency-converters'>
+</select>
+<button id='calculate'>Calculate</button>
+`;
+
+let selectConverter = document.getElementById('currency-converters');
+let baseLabel = document.getElementById('usd');
+let button = document.getElementById('calculate');
+
+
 
