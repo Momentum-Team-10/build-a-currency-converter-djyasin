@@ -33,4 +33,7 @@ const currencies = [
   'KRW',
   'MYR'
 ]
+const root = document.getElementById("root");
+const container = document.createElement("div");
+root.appendChild(container);
 
